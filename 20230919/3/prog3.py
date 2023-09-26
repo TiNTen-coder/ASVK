@@ -1,5 +1,5 @@
 def digits_sum(n):
-	ans = 0	
+	ans = 0
 	while n:
 		ans += n % 10
 		n //= 10
