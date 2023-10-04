@@ -1,0 +1,2 @@
+"cbrt(exp(pow(x, 10)))", "log2(x) ** cos(x)", "exp(y) - max(x, y)"
+1.23
