@@ -1,0 +1,15 @@
+:assert expr1 expr2 expr1==expr2
+assert 5 5
+assert 4 6
+assert "asd" "saf"
+assert "" ""
+assert True False
+assert (1,2,3,4,) (1,2,3,4)
+assert [1,2,3] [1,2,3,4]
+assert {1,2} {1,2,2}
+assert (1,) 1
+assert 0 -0
+assert "\n" "\n"
+:assert "print('Ilovepython')"
+assert
+                quit "{}‿︵‿ヽ(°□° )ノ︵‿︵{}"
