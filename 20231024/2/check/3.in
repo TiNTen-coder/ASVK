@@ -1,0 +1,1 @@
+print([list(slide(range(10 * i, 34 * i), 10 * i)) for i in range(1, 15)])
