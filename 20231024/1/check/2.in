@@ -1,0 +1,4 @@
+print(*fib(0, 2))
+for i in range(1, 101):
+    for j in range(1, 101):
+        print(sum(list(fib(i, j))))

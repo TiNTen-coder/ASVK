@@ -1,0 +1,5 @@
+print(not (list(fib(12, 0)) + list(fib(1241242582739581729408120948, 0))))
+ite = fib(1, 100)
+for i in range(10):
+    print(next(ite))
+print(*ite, sep=':LOL:')
