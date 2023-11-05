@@ -1,0 +1,13 @@
+a, b = Omnibus(), Omnibus()
+a._i = a.i = "Horde", "Alliance"
+b.j = b._j = "Night Elfs", "Undead"
+print(a._i, a.i, b.j, b._j)
+del a._i
+print(a._i, a.i, b.j, b._j)
+del a.i, b.j
+print(a._i, a.i, b.j, b._j)
+del b._j
+print(a._i, a.i, b.j, b._j)
+a._i = a.i = "Horde", "Alliance"
+b.j = b._j = "Night Elfs", "Undead"
+print(a._i, a.i, b.j, b._j)

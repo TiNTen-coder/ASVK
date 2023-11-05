@@ -1,0 +1,12 @@
+asvk, other_groups = Omnibus(), Omnibus()
+asvk.economics, asvk.applied_algebra, asvk.databases, asvk.equations_of_mathematical_physics, asvk.introduction_to_computer_networks = 5, 5, 5, 5, 5
+other_groups.economics, other_groups.applied_algebra, other_groups.databases, other_groups.equations_of_mathematical_physics, other_groups.introduction_to_computer_networks = 2, 2, 2, 2, 2
+print("ASVK marks: ", asvk.economics, asvk.applied_algebra, asvk.databases, asvk.equations_of_mathematical_physics, asvk.introduction_to_computer_networks)
+print("Another groups marks: ", other_groups.economics, other_groups.applied_algebra, other_groups.databases, other_groups.equations_of_mathematical_physics, other_groups.introduction_to_computer_networks)
+del asvk.economics, asvk.applied_algebra, asvk.databases, asvk.equations_of_mathematical_physics, asvk.introduction_to_computer_networks
+del other_groups.economics, other_groups.applied_algebra, other_groups.databases, other_groups.equations_of_mathematical_physics, other_groups.introduction_to_computer_networks
+asvk.economics, asvk.applied_algebra, asvk.databases, asvk.equations_of_mathematical_physics, asvk.introduction_to_computer_networks = "отл.", "отлично", "Отлично", "отл", "Отл."
+other_groups.economics, other_groups.applied_algebra, other_groups.databases, other_groups.equations_of_mathematical_physics, other_groups.introduction_to_computer_networks = "уд.", "---", "удовл.", "уд", "---"
+print("ASVK marks: ", asvk.economics, asvk.applied_algebra, asvk.databases, asvk.equations_of_mathematical_physics, asvk.introduction_to_computer_networks)
+print("Another groups marks: ", other_groups.economics, other_groups.applied_algebra, other_groups.databases, other_groups.equations_of_mathematical_physics, other_groups.introduction_to_computer_networks)
+print("As result, unfortunately, all students will get retake :((((")
