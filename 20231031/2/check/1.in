@@ -1,0 +1,7 @@
+first = Triangle((2, 0), (0, 4), (4, 4))
+second = Triangle((1, 3), (3, 3), (2, 1))
+print(abs(first), abs(second))
+print(bool(first), bool(second))
+print(first < second, first > second)
+print(first in second, second in first)
+print(first & second, second & first)
