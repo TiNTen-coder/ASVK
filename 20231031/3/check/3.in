@@ -1,0 +1,7 @@
+n = 9
+m = Maze(n)
+for i in range(n):
+    m[i,0 : i,n - 1] = '█'
+    m[0,i : n - 1,i] = '█'
+print(m)
+print(m[2,2 : 8,8])
