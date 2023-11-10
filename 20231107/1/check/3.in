@@ -1,0 +1,12 @@
+from string import ascii_lowercase, ascii_uppercase
+
+u = DivStr(ascii_uppercase[::-1])
+z = (u + ascii_lowercase) // 13
+print(*z, type(z))
+w = (ascii_lowercase + u) // 13
+print(*w, type(w))
+print(* u * 2)
+print(* (u * 3)[:-2] // 3)
+print(* (u * 3)[:-2] % 3)
+print(* (u[:-2] * 3) // 3)
+print(* (u[:-2] * 3) % 3)

@@ -1,0 +1,9 @@
+empty = DivStr()
+print(* empty // 1, * empty % 1)
+a = DivStr('DivStr')
+print(type(a % 1))
+
+w = a // 1
+print(type(a))
+for i in a:
+    print(f'{type(i)}---{i}')

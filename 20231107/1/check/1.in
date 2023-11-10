@@ -1,0 +1,4 @@
+python = DivStr('Python')
+print(*python // 6)
+print(*python % 6)
+print(* (python + python[::-1])[1:-1:3] // 2)
