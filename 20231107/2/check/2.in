@@ -1,0 +1,2 @@
+("123", "234"), (True, False), (TypeError, IndexError)
+(0, 0), (0, 4), (3, 4)
