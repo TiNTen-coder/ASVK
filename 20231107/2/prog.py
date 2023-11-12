@@ -45,4 +45,3 @@ while flag:
 else:
     print(f'{ans:.2f}')
 
-
