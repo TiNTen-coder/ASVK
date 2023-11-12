@@ -16,15 +16,17 @@ class BadTriangle(Exception):
 def triangleSquare(inStr):
     try:
         (x1, y1), (x2, y2), (x3, y3) = eval(inStr)
+    except Exception as Ex:
+        raise InvalidInput
+    try:
         assert type(x1) in {int, float}
         assert type(y1) in {int, float}
         assert type(x2) in {int, float}
         assert type(y2) in {int, float}
         assert type(x3) in {int, float}
         assert type(y3) in {int, float}
-
     except Exception as Ex:
-        raise InvalidInput
+        raise BadTriangle
     area = abs((x1 - x2) * (y1 - y3) - (x1 - x3) * (y1 - y2)) / 2
     if not area:
         raise BadTriangle
