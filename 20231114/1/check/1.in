@@ -1,0 +1,16 @@
+@objcount
+class C:
+    def __init__(self, yes=None):
+        self.yes = yes
+        self.counter = 100500
+
+    def __del__(self):
+        print('deleted')
+
+
+a = [C(i) for i in range(1000)]
+print(C.counter)
+a = -10
+print(C.counter)
+C()
+print(C.counter)

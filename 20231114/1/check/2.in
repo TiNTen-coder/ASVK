@@ -1,0 +1,14 @@
+from random import randint
+
+
+@objcount
+class C:
+    def __init__(self, *args, **kwargs):
+        print(args[0] + kwargs['u'], end='|')
+        
+    def __del__(self):
+        pass
+
+for i in range(500):
+    exec(f'x{i} = C({randint(1, 10000)}, u={randint(1, 10000)})')
+    exec(f'print(x{i}.counter)')

@@ -1,0 +1,11 @@
+@objcount
+class C:
+    def __init__(self, *args, **kwargs):
+        pass
+
+a = C()
+b = C(C())
+c = C(C(C()))
+d = C(C(C(C())))
+print(C.counter)
+print(a.counter, b.counter, c.counter, d.counter)
