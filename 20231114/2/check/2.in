@@ -1,0 +1,13 @@
+class C:
+    num = Num()
+
+
+class D:
+    num = Num()
+
+
+c = C()
+d = D()
+c.num = 201
+d.num = 321
+print(c.num + d.num)

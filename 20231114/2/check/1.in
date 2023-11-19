@@ -1,0 +1,13 @@
+class C:
+    a = Num()
+    b = Num()
+
+c = C()
+d = C()
+c.a = d.a = 12
+c.b = d.b = ['a', 1, "aboba"]
+print(c.a + c.b)
+print(d.b + d.a)
+c.b = {}
+print(c.a + c.b)
+print(d.b + d.a)

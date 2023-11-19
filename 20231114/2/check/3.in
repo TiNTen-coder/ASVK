@@ -1,0 +1,10 @@
+class C(set):
+    num = Num()
+
+
+c = C({12, 32})
+d = C({1})
+c.num = 1j
+d.num = [{1, 2}, {2}, {3}]
+print(c.num)
+print(d.num)
