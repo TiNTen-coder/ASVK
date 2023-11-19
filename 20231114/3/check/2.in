@@ -1,0 +1,31 @@
+try:
+    first = Alpha(a=1, b=3, c=5, abc=135)
+    print('No errors')
+except AttributeError:
+    print("Caught")
+finally:
+    print('Done first')
+
+try:
+    second = AlphaQ(a=1, b=3, c=5, abc=135)
+    print('No errors')
+except AttributeError:
+    print("Caught")
+finally:
+    print('Done second')
+
+try:
+    third = Alpha(g=1, s=2, e=3, d={1: 2})
+    print('No errors')
+except AttributeError:
+    print("Caught")
+finally:
+    print('Done third')
+
+try:
+    fourth = AlphaQ(g=1, s=2, e=3, d={1: 2})
+    print('No errors')
+except AttributeError:
+    print("Caught")
+finally:
+    print('Done fourth')
