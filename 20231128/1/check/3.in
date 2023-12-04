@@ -1,0 +1,24 @@
+class C(metaclass=dump):
+    def __init__(self, val, thread):
+        self.val = val
+        self.thread = 20 + thread
+
+    def __mul__(self, other):
+        return self.val * other * self.thread
+
+    def __rmul__(self, other):
+        return self.val * other * self.thread
+
+    def mul(self, kek, lol):
+        return "cheburek"
+
+    def rmul(self, kek, lol):
+        return "rcheburek"
+
+
+c = C(1, 160)
+print(c * 2)
+print(2 * c)
+
+print(c.mul(1, 2))
+print(c.mul(1, 2))

@@ -1,0 +1,33 @@
+
+class C(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def __ne__(self, other):
+        return self.val == other
+
+    def __eq__(self, other):
+        return self.val != other
+
+    def __gt__(self, other):
+        return self.val < other
+
+    def __lt__(self, other):
+        return self.val > other
+
+    def __ge__(self, other):
+        return self.val <= other
+
+    def __le__(self, other):
+        return self.val >= other
+
+q, w, e = C(1), C(2), C(3)
+print(q != 1)
+print(w != 2)
+print(w == 2)
+print(q != 3)
+
+print(q <= 1)
+print(w >= 2)
+print(w < 2)
+print(q > 3)

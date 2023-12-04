@@ -1,0 +1,21 @@
+from math import e
+
+
+class C(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def add(self, other, another=None):
+        return self.val + other + (another or self.val)
+
+    def __add__(self, other):
+        return self.add(other=1, another=2)
+
+    def __sub__(self, other):
+        return self.add(other=1, another=2)
+
+
+c = C(e)
+print(c + 9)
+print(c + 100500)
+print(c - e)
