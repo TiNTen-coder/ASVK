@@ -10,5 +10,5 @@ class C:
         pass
 
 for i in range(500):
-    exec(f'x{i} = C({randint(1, 10000)}, u={randint(1, 10000)})')
+    exec(f'x{i} = C({i}, u={(i + 15) // 2})')
     exec(f'print(x{i}.counter)')
